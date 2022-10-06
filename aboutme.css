@@ -1,0 +1,418 @@
+body, * { /* styling the body tag and fonts making background colour and white font*/
+    margin:0;
+    padding:0 ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(5, 14, 60);
+    color: white;
+    }
+
+  /* when user clicks home, about, myprojects, and contact it will lead them to that section*/  
+    html{
+        scroll-behavior: smooth;
+    }
+
+    header{
+      
+        background-color: rgb(5, 14, 60);
+        padding: 0px ;
+        font-size: 30;
+    
+    }
+  
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content:space-between ;
+        flex-wrap: wrap;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    header h2{
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 20px;
+   
+     
+       
+    }
+ /* making logo allign at the top with no padding*/  
+    header .logo{
+        text-align:top;
+        padding-inline-start: 0px;
+      }
+
+
+    header a{
+      color:#fff;
+      text-decoration:none;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+      align-content: flex-end;
+      
+
+    }
+
+     /* styling the list*/  
+  header ul li {
+        display: inline-block;
+        list-style:lower-roman;
+        margin-left: 40px;
+        padding: 27px 90px;
+        font-size: 20px;  
+     
+       
+        
+    }
+     /* creating hover on tabs home,aboutme,myprojects, and contact me*/  
+
+    header ul li:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        opacity: 20%S;
+        
+        }
+
+         /* sizing my logo*/  
+    .logo img{
+        width: 70px;
+    }
+
+    .logo{
+        float: left;
+    
+    }
+
+    .header {
+        margin-top: 20%; 
+        font-size: 30px;
+        padding-left: 20px;
+        text-align: center;
+      
+    }
+
+    .header h1{
+        font-size: 50px;
+        margin-top: 20px;
+        
+
+    }
+
+    .header h1 span{
+     color: rgb(223, 146, 4);
+    }
+
+    .header h2{
+        font-size: 40px;
+        text-align: center;
+        padding-top: 100px;
+        margin-bottom: -5%;
+        text-decoration:underline orange
+    }
+
+    #about{
+        padding: 100px 0px;
+        margin: 5% 5%;
+        color: grey; 
+    }
+
+    /*adjusting where the video should be and spacing*/
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+
+    .column1{
+        flex-basis: 35%;
+
+    }
+    .column1 img{
+        width: 100%;
+        border-radius: 15px;
+
+    }
+
+    .column2{
+        flex-basis: 60%;
+        font-size: 25px;
+        color:grey
+    }
+
+    /*spacing about me intro to be beside the image */
+  
+
+    .column2 p{
+        font-size: 23px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-top: 0;
+    }
+
+ 
+#MyProjects{
+    padding:30px 0;
+    font-size: 20px;
+
+
+}
+
+   /*making a grid so that elements on the two projects can be side by side and into coloumns */
+.services{
+    margin: 5rem auto;
+    display:grid;
+    grid-auto-flow: column;
+
+
+}
+
+/*adjusting the text under the grid titles*/
+
+.services p{
+    padding: 20px 150px 
+}
+
+
+
+.me h1{
+    text-align: center;
+    text-decoration:underline orange
+}
+
+.contactme p{
+    text-align: center;
+}
+
+
+.playingvideo{
+    width: 20%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 0;
+}
+
+.para h3{
+    padding-top: 0px;
+
+}
+
+/*created a container box which has my skills inside and when hovered over it will change colours*/
+.container .box{
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin:180px 50px auto;
+    background: orange;
+
+    
+}
+
+.container .box .icon{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: blueviolet;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.container .box:hover .icon{
+    top:20px;
+    left:calc(50%-40px);
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+
+
+}
+
+.para .h2{
+ text-decoration: underline;
+ font-size: 20px;
+
+
+}
+.container .box .para{
+    position: absolute;
+    top: 100px;
+    height: calc(100%- 100px)
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px
+
+}
+
+.container .box2{
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin:130px 90px auto;
+    background: orange;
+
+    
+}
+
+
+.container .box2 .icon{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: blueviolet;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.container .box2:hover .icon{
+    right:20px;
+    bottom: 50px;
+    margin: 20px 400px;
+    right:calc(50%-40px);
+    width: 80px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+
+
+}
+
+.container .box2 .para{
+    position: absolute;
+    top: 100px;
+    height: calc(100%- 100px)
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 15px
+
+}
+
+ .contactme h1{
+   padding: 0px 100px ;
+    text-decoration: underline;
+    
+}
+
+.inform p{
+    padding: 0px 100px ;
+    font-size: 15px;
+    padding-top:0 ;
+
+}
+
+.symbols {
+    padding: 0px 100px ;
+    font-size: 15px;
+    padding-top:0 ;
+
+}
+
+.forms h1{
+    text-align: right;
+    padding-top: 0px;
+}
+
+.forms {
+    text-align: right;
+    padding: -120px 12px;
+    color: orange;
+    font-size: 20px;
+    fill: aquamarine;
+    
+}
+
+footer{
+    background: white;
+    height: auto;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    color: orange;
+    text-align: center;
+}
+
+footer h3{
+  font-size: 25px;
+  text-decoration: underline orange;
+  
+}
+
+footer p span{
+    color: rgb(223, 146, 4);
+   }
+
+/*creating css for mobile so that it fits*/
+   @media (max-width: 600px){
+    header ul li {
+        display: inline-block;
+        list-style:lower-roman;
+        margin-left: 40px;
+        padding: 20px 50px;
+        font-size: 10px;  
+       background-color: oran;
+    }
+    
+    header h2{
+        font-size: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: 20px;
+    }
+    footer h3{
+        font-size: 25px;
+        text-decoration: underline orange;
+    }
+
+    .playingvideo{
+        width: 10%;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        padding-top: 0;
+    }
+    .services{
+        margin: 5rem auto;
+        width: min(10%,90 rem);
+        width:max(90% 70 rem);
+        display:grid;
+        grid-auto-flow: column;
+    
+    
+    }
+
+    .column2 p{
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-top: ;
+    }
+   
+     
+       
+    }
+   
+
+
+
+   
+
+
+   
+

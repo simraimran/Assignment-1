@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html> 
+  <!----Making the head tag for website -->
+  <head>
+     <!----titile of code-->
+    <title>My Portfolio</title>
+     <!----linking css file -->
+    <link rel="stylesheet" href="aboutme.css" type="text/css" />
+     <!----for icons used in website -->
+    <script src="https://kit.fontawesome.com/108166ad04.js" crossorigin="anonymous"></script>
+  </head> <!----closing head tag-->
+  <body id="top" class="top"></body>
+    <header>
+       <!----adding logo to the website -->
+      <div class="logo">
+        <!----source of logo-->
+        <img src="myAvatar (1).png" alt="logo" />
+      </div>
+      <nav>
+        <ul> <!----making list of home about and my project on top of page-->
+          <li><a href="#Header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#MyProjects">My Projects</a></li>
+          <li><a href="#Contact">Contact Me</a></li>
+        </ul>
+        </nav>
+        <!----about me page intro-->
+      <div class="header">
+      <p>Student at OTU</p>
+      <h1> Hi, Im <span>Simra </span> <br> 3rd year programming student </h1> 
+      <h2>About Me</h2>
+    </div>
+   
+<!----creating div id for the about me page and then a class called row to make rows on page so that my image and text can be side by
+side -->
+    <div id="about">
+    <div class=" row">
+            <div class="column1">
+              <!----adding my image-->
+                <img src="aboutme.png">
+            </div>
+                <div class="column2">
+                    <p> <!---- my intro-->
+                        My name is Simra, I am currently a 3rd student at Ontario Tech University studying IT Tech Management. 
+                        I have always been very indecisve and I think I still am, I have switched around programs going from 
+                        Networking to Tech Management. When I was studying Networking it seemed way too technical for me which is why
+                        I decided to choose Tech Management as it is a little bridge between business and technology. One aspect I truly 
+                        do enjoy learning about in Tech Management is Information Systems, learning SAP was very interesting to me. As of now, 
+                        I am learning how to code websites and although is a little confusing at times I really do want to get better at it. 
+                        
+
+                    </p>
+
+<!----adding my video which will be muted and will autoplay itself using the autopplay loop-->
+                    <div class="playingvideo">
+                      <video pic="image/bg.jpg" controls muted autoplay loop>
+                        <source src="file.mp4" type="video/mp4" />
+
+                      </video>
+                    </aside>
+                  </video>
+                  </div>
+                </div>
+              <!----creating another body tag, using div class container so that elements in this class will be the same font and alike 
+                and then creating a class called box to add boxes to my webpage-->
+             <body>
+                  <div class="container">
+                    <div class="box">
+                      <!---- adding icons-->
+                      <div class=" icon"><i class="fab fa-app-store">
+                      </i></div>
+                       <!---- adding skills inside the boxes-->
+                      <div class="para">
+                        <h2>Skills</h2>
+                        <p> <br> Teamwork<br> Communication <br> Harworking</p>
+
+                      </div>
+                      <!----creating the second box and adding icon also different paragraph to it using class para-->
+
+                    </div>
+                    <div class="box2">
+                      <div class=" icon"><i class="fab fa-app-store">
+                      </i></div>
+                       
+                      <div class="para">
+                        <h2>Work Experience</h2>
+                        <p> <br> Costco<br> Marketing Assistant<br> Data Clerk</p>
+
+                    </div>
+              
+                    
+            
+                </div>
+              </body>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!---- creating my projects page --> 
+<div id="MyProjects">
+    <div class= "me">
+        <h1 class=" subtitle">My Projects</h1>
+        <div class="services">
+        <div>
+            <h2>Web Designing</h2>
+            <p>Learning python in first year and developing 
+                little activities, such as making 
+                a calculator and spelling game.   </p>
+          
+        </div>
+        <div>
+            <h2> Graphic Designing </h2>
+            <p> Designed posters and phamplets for small businesses. </p>
+             
+        </div>
+
+    </div>
+
+    </div>
+</div>
+
+<!-------Contact-->
+
+
+<div id="Contact">
+  <div class=" contactme">
+      <h1 ><u>Contact Me</u></h1>
+    </div>
+  <!--- creating class called inform with all the icons and iformation under this is also forms-->
+    <div class="inform">
+    <p>simraimran2@gmail.com</p>
+    <p>905 576 5884</p>
+    <p>ON Mississauaga</p>
+    <div class="symbols"> <i class="fa-solid fa-comment"></i> <i class="fa-regular fa-handshake"></i> <i class="fa-solid fa-mobile-screen"></i>
+    </div>
+    </div>
+  </div>
+  <!--- creating the forms on webpage -->
+  <div class=" forms">
+   <form>
+    <p> 
+      <label for="name">Name</label> 
+      <input type="text" name="name" size="32" placeholder="Name:" required> <br>
+
+      <label for="email">Email</label> 
+      <input name="email" type="email" size="40" placeholder="Email:"required> <br> <!--- placeholder that will showinside form -->
+
+      <label for="comments">Comments?</label> 
+      <textarea name="comments" cols="20" rows="6"></textarea> <br>
+ 
+      <label for= "where">How did you find us?</label> 
+        <select name="where"> 
+        <option value="Search engine">Search engine</option> 
+        <option value="Word of mouth">Word of mouth</option> 
+        <option value="Craigslist">Craigslist</option> 
+        <option value="Other">Other</option> 
+        </select> <br>
+
+        <input type="submit" value="Click here to submit the form"/>
+<input type="reset" value="Click here to reset the form"/>  <!--- submit and reset  -->
+
+  </p>
+
+
+  </form>
+</div>
+
+<!--- creating a footer tag that will include links to my socials -->
+<footer>
+  <div class= "footer">
+    <h3> My Socials</h3>
+    <ul>
+      <li><a href="#">Linkd<i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="#">Email<i class="fa-solid fa-envelope"></i></a></li>
+      <li><a href="https://www.instagram.com/_.sumairah/">Instagram<i class="fa-brands fa-square-instagram"></i></a></li>  
+  
+  
+    </ul>
+  </div>
+  <div class=" footer-bottom">
+    <p>
+      copyright 2022 MyPortfolio. designed by <span> simra </span>
+    </p>
+  </div>
+
+</footer>
+
+</div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+        </header>
+        
+        </html>
+
